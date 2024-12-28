@@ -206,9 +206,20 @@ body{
 }
 
 .section4{
-    margin-top: 50px;
+    margin-top: 150px;
     padding-left: 20px;
     line-height: 44px;
+    margin-bottom: 30px;
+}
+
+.section4 h1{
+    color:black;
+    text-align: left;
+}
+
+.section4 p{
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .section4 button{
@@ -238,6 +249,7 @@ body{
 
 .review{
     display: flex;
+    margin-top: 40px;
     flex-direction: column;
 }
 
@@ -278,6 +290,7 @@ body{
 #review-h2{
     text-align: center;
     color: #ddd;
+    font-size: 35px;
     margin-bottom: 40px;
 }
 .review-rating{
