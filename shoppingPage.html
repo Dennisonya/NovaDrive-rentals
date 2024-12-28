@@ -1,0 +1,158 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Rent Car</title>
+ </head>
+ <body>
+    <div class="hero-image3">
+        <video class="background-video" src="images/hero4video.mp4" autoplay loop muted playsinline></video>
+        <nav>
+            <div class="logo">
+                <h1>DrivePro Rentals</h1>
+            </div>
+            <ul class="link">
+                <li><a href="./homePage.html">Home</a></li>
+                <li><a href="./destinationPage.html">Destinations</a></li>
+                <li><a href="./shoppingPage.html">Rent car</a></li>
+                <li><a href="./contactPage.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+            <h1 id="hero-text2">FIND THE PERFECT CAR FOR YOUR NEXT TRIP</h1>
+    
+    </div>
+
+    <h1 id="header">Good to know when renting in Cyprus</h1>
+
+    <div class="rent-infos">
+        <div class="rent-info">
+            <h2>Car rental under 25 <br>in Cyprus</h2>
+            <p>You must be at least 21 years old with <br>
+            a license held for 3 years to rent a car <br>
+            from SIXT. An underage driver fee applies. <br>
+            Some car categories require the driver to be 25.</p>
+        </div>
+
+        <div class="rent-info">
+            <h2>Driver's License Requirements</h2>
+            <p>Your license must have been valid for 3 <br>
+                years. If it is in a non-Roman alphabet <br>
+                it must be accompanied by an International <br>
+                Driving Permit. Chinese drivers need a <br>
+                translation of their license</p>
+        </div>
+
+        <div class="rent-info">
+            <h2>One-way car rental in <br> Cyprus</h2>
+            <p>One-way rentals between SIXT stations<br>
+            are allowed for some vehicles. An <br>
+            additional fee may apply.</p>
+        </div>
+    </div>
+
+        <h1 id="header">Our Rental Cars</h1>
+
+        <div class="cars">
+            <div class="car" id="1">
+                <div class="car-txt">
+                    <img src="images/porsche5.jpg" alt="car1"/>
+                    <h2>Porsche 911 turbo s</h2>
+                    <h2>Mileage: 8000 miles</h2>
+                    <p>$140/ day</p>
+                    <button onclick="carButtons()">Rent</button>
+                </div>
+            </div>
+
+            <div class="car" id="2">
+                <div class="car-txt">
+                    <img src="images/mazdaez6.jpg" alt="car2"/>
+                    <h2>Mazda Ez 6</h2>
+                    <h2>Mileage: 10000 miles</h2>
+                    <p> $90 / day</p>
+                    <button>Rent</button>
+                </div>
+            </div>
+
+            <div class="car" id="3">
+                <div class="car-txt">
+                    <img src="images/Porsche.jpeg" alt="car3"/>
+                    <h2>Porsche 911 Cayenne turbo</h2>
+                    <h2>Mileage: 7000 miles</h2>
+                    <p> $100 / day</p>
+                    <button>Rent</button>
+                </div>
+            </div>
+
+            <div class="car" id="4">
+                <div class="car-txt">
+                    <img src="images/Benz.jpg" alt="car4"/>
+                    <h2>Mercedz Benz S Class</h2>
+                    <h2>Mileage: 12000 miles</h2>
+                    <p> $80 / day</p>
+                    <button>Rent</button>
+                </div>
+            </div>
+
+            <div class="car" id="5">
+                <div class="car-txt">
+                    <img src="images/rangeRover2.jpg" alt="car5"/>
+                    <h2>Range Rover</h2>
+                    <h2>Mileage: 9000 miles</h2>
+                    <p> $150 / day</p>
+                    <button>Rent</button>
+                </div>
+            </div>
+        </div>
+
+        <h1 id="header">Your Selected Cars</h1>
+        <div class="car-list">
+            <div class="heading">
+                <h2>Selected Cars</h2>
+                <h2>Per Day</h2>
+                <h2>Total</h2>
+            </div>
+            <!--<div class="selected-car">
+                <img src="" alt="car">
+                <img class="delete-button" src="images/icons8-delete-64.png"></img>
+                <div class="selected-car-details">
+                    <h2>Car 1</h2>
+                    <p> price / day</p>
+                    <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <h2 id="price">price</h2>
+                
+            </div>-->
+
+            <div class="total-price">
+                <div class="sub-total">
+                    <h2 id="Total">Total</h2>
+                    <h2 id="total-price">$0.00</h2>
+                </div>
+                <div class="Total">
+                    <h2 id="Total">Total including VAT <br> (15%)</h2>
+                    <h2 id="total-vat-price">$0.00</h2>
+                </div>
+            </div>
+
+        </div>
+        <button id="book-button">Book Now</button>
+
+
+ <div class="footer">
+        <h1><a href="./homePage.html">DrivePro</a></h1>
+        <p>Terms and conditions | <a href="./contactPage.html">Contact us</a></p>
+    </div>
+        <script src="script.js"></script>
+ </body>
+ </html>

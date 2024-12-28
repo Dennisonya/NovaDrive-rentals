@@ -1,0 +1,824 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: "Inter", serif;
+    font-style: normal;
+}
+
+/*Homepage*/
+
+.hero-image nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.link{
+    display: flex;
+    font-weight: 600;
+    gap:25px;
+    font-size: 15px;
+    list-style: none;
+}
+.link a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    cursor: pointer;
+    font-size: 20px;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+.hero-image{
+    display: flex;
+    color:white ;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-image:url("images/Heroimage1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width:100%;
+}
+
+.hero-text{
+    text-align: center;
+    line-height: 30px;
+    margin-top: 200px;
+}
+
+.hero-text h1{
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+
+.hero-text h2{
+    font-size:25px;
+    color: white;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
+.hero-text p{
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.hero-text button{
+    padding: 15px;
+    width: 228px;
+    border-radius: 27px;
+    font-style: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.hero-text button:hover{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.info1{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info{
+    width: 544px;
+    text-align: center;
+    height:205px
+}
+
+.hero2{
+    width:1300px;
+    height: 573px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom:  25px;
+    color: white;
+    background-image: url('images/section2image.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-self: center;
+    border-radius: 25px;
+}
+
+.hero2-text{
+    padding: 15px;
+}
+
+.hero2-text h1{
+    font-size: 54px;
+    margin-bottom: 35px;
+}
+
+.hero2-text p{
+    font-size: 22px;
+    margin-bottom: 42px;
+}
+
+.hero2-text button{
+    padding: 10px;
+    width: 228px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+    border:  2px solid white;
+    transition: 0.5s ease-in-out;
+}
+
+.hero2-text button:hover{
+    background-color: white;
+    color:black;
+}
+
+#header{
+    padding: 20px;
+    margin-left:15px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.section2{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.section2-info img{
+    width: 50px;
+}
+
+.section3{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.section3-info1{
+    width: 360px;
+    text-align: center;
+    color: white;
+    height: 350px;
+    background-color: beige;
+    padding: 10px;
+    border-radius: 55px;
+    background-image: url("images/carOwner.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.section3-info2{
+    width: 360px;
+    text-align: center;
+    background-image: url("images/businessman_with_car.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    color: white;
+    background-color: beige;
+    padding: 10px;
+    border-radius: 55px;
+}
+.section3-info3{
+    width: 360px;
+    text-align: center;
+    background-image: url("images/chauffuer.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: 350px;
+    background-color: beige;
+    padding: 10px;
+    border-radius: 55px;
+}
+
+.section4{
+    margin-top: 50px;
+    padding-left: 20px;
+    line-height: 44px;
+}
+
+.section4 button{
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 27px;
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.section4 button:hover{
+    background-color: transparent;
+    color: black;
+}
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: black;
+    padding: 50px;
+    margin-bottom: 60px;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+}
+
+#review-p{
+    text-align: center;
+    color: #ddd;
+    margin-bottom: 40px;
+}
+
+.reviews2{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.review2{
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 280px;
+    background-color:white;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+
+.review-txt{
+    margin-top: 25px;
+    text-align:left;
+}
+.reviews h1{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+}
+#review-h2{
+    text-align: center;
+    color: #ddd;
+    margin-bottom: 40px;
+}
+.review-rating{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.review-rating img{
+    width:40px;
+    height:40px
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color:white;
+    align-items: center;
+    padding:15px;
+}
+
+.footer a{
+    text-decoration: none;
+    color:white;
+}
+
+/* destination Page*/
+
+.hero-image2{
+    display: flex;
+    color:white ;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-image:url("images/Heroimage3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width:100%;
+}
+#hero-image2-h1{
+    color: white;
+}
+.hero-image2 nav{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.contents{
+    margin-top: 40px;
+    display: grid;
+    text-align: center;
+    margin-bottom: 60px;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contents button{
+    width: 150px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgb(51, 48, 48);
+    color: white;
+    border-radius: 25px;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contents button:hover{
+    background-color: rgb(80, 76, 76);
+    color: white;
+}
+.content1{
+    background-image:url(images/Kyrenia.jpeg);
+    background-size: cover;
+    border-radius: 25px;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    height: 300px;
+}
+
+.content2{
+    background-image:url(images/lanarca.jpeg) ;
+    background-size: cover;
+    border-radius: 25px;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    height: 300px;
+}
+.content3{
+    background-image:url(images/nicosia.jpeg);
+    background-size: cover;
+    border-radius: 25px;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    height: 300px;
+}
+.content4{
+    background-image:url(images/protaras.jpeg);
+    background-size: cover;
+    border-radius: 25px;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    height: 300px;
+}
+.content5{
+    background-image:url(images/pafos.jpeg);
+    background-size: cover;
+    border-radius: 25px;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    height: 300px;
+}
+
+#content-image{
+width: 350px;
+max-height: 300px;
+border-radius: 15px;
+}
+
+
+.top-branches{
+background-color: lightgray;
+height: 550px;
+
+}
+
+.branches{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.top img{
+    width:25px;
+    height: 25px;
+    padding: 10px;
+}
+.rating{
+    display: flex;
+    align-items: center;
+}
+
+.rating img{
+    width: 15px;
+    height: 15px;
+}
+.branch{
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 350px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.buttons{
+    margin-top: 70px;
+    justify-self: center;
+    display: flex;
+    padding: 15px;
+}
+.pickup{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 20px;
+    cursor: pointer;
+    padding: 5px;
+    align-items: center;
+}
+.pickup img{
+    width: 20px;
+    height: 20px;
+}
+.return{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    height: 20px;
+    padding: 5px;
+    align-items: center;
+}
+
+.return img{
+    width: 20px;
+    height: 20px;
+}
+
+
+.branch-text{
+    display: flex;
+    font-size: 18px;
+    text-align: left;
+}
+/* Rent Page*/
+
+.hero-image3{
+    display: flex;
+    position: relative;
+    color:white ;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width:100%;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+.hero-image3 nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#hero-text2{
+    text-align: center;
+    font-size: 50px;
+    line-height: 30px;
+    margin-top: 200px;
+}
+
+.rent-infos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image:url(images/porsche4.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 150px;
+    gap: 50px;
+}
+
+.rent-info{
+    text-align: left;
+    background-color: white;
+    border-radius: 25px;
+    padding: 15px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 544px;
+    height:250px;
+    box-shadow: 12px 12px 2px 1px rgba(18, 18, 18, 0.2);
+}
+
+.rent-info h2{
+    margin-bottom: 30px;
+}
+
+.cars{
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    gap:40px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.car{
+    height: 550px;
+    background-color: lightgray;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.car-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    line-height: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+.car-txt img {
+    width:100%;
+    max-height:320px;
+    border-radius: 25px;
+}
+
+.car-txt button{
+    transition: 0.5s;
+    width: 150px;
+    padding: 9px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.car-txt button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.car-list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    background-color: lightgray;
+    height: 100%; 
+    max-height: 400px; 
+    border: 1px solid #ddd; 
+    padding: 10px;
+    overflow-y: auto; 
+    position: relative; 
+}
+
+.car-list .heading{
+    display: flex;
+    justify-content: space-around;
+}
+ .total-price{
+    align-items: flex-end;
+}
+.selected-car{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom:  2px solid black;
+    align-items: center;
+    max-width: auto;
+}
+
+.selected-car img{
+    width: 25%;
+    border-radius: 25px;
+}
+
+.selected-car .delete-button{
+    width:25px;
+    height:25px;
+}
+
+.selected-car-details{
+    display:flex;
+    flex-direction: column;
+}
+.total-price{
+    margin-top: auto; /* Pushes this div to the bottom */
+    padding-top: 10px;
+}
+
+
+.sub-total{
+    margin-left: 450px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: right;
+}
+
+.Total{
+    margin-left: 300px;
+    display: flex;
+    text-align: right;
+    justify-content: space-around;
+    padding:10px;
+}
+
+#book-button{
+    padding: 15px;
+    width: 150px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    display: flex;
+    justify-self: right;
+    margin-right: 60px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+#book-button:hover{
+    background-color: rgb(26, 26, 26);
+    color: white;
+    translate: 10px;
+}
+
+/*Contact Us Page*/
+.hero-image4 nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.hero-image4-link{
+    display: flex;
+    font-weight: 600;
+    gap:25px;
+    font-size: 20px;
+    list-style: none;
+}
+.hero-image4-link a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    cursor: pointer;
+    font-size: 20px;
+}
+.hero-image4 .logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.hero-image4{
+    display: flex;
+    color:white ;
+    font-family: "Inter", serif;
+    font-style: normal;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-image:url(images/Heroimage4.jpg);
+    background-color: burlywood;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width:100%;
+}
+
+.hero-image4-text{
+    text-align: center;
+    line-height: 30px;
+    margin-top: 200px;
+    color: white;
+}
+
+.hero-image4-text h1{
+    color: white;
+}
+
+
+.contactUsHero, h1{
+    text-align: center;
+    font-size: 50px;
+    color:white;
+}
+
+#contact-txt{
+    font-size: 20px;
+    color:#565449;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-us-info{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-self: center;
+    margin-bottom: 30px
+}
+
+.contact-us-info h2{
+    padding: 40px;
+    text-align: center;
+    color:#565449;
+}
+.contact-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem; 
+}
+
+#name, #email {
+    grid-column: span 1; 
+}
+
+#number {
+    grid-column: span 2;
+}
+#comment {
+    grid-column: span 2; 
+    height: 6rem; 
+}
+
+input {
+    border-radius: 20px; 
+    background-color: transparent; 
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+input:focus {
+    border-color: #4e4c42; 
+    box-shadow: 0 0 4px #4e4c42;
+}
+
+input:hover{
+    border-color: #050506; 
+}
+
+.send-btn{
+    margin-top: 20px;
+    width:20%;
+    height: 3em;
+    padding: 0.5em;
+    background-color:#565449;
+    border-radius: 20px;
+    color:white;
+}
+.send-btn:hover{
+    background-color: #434137;
+    color: white;
+}
