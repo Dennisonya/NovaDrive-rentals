@@ -102,7 +102,7 @@ carButtons.forEach(button => {
 
 
 // Form Validation and Submit Functionality
-document.getElementById("submitBtn").addEventListener("click", function () {
+document.getElementById("contactForm").addEventListener("submit", (event) => {
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
   const number = document.getElementById("number").value.trim();
@@ -135,4 +135,28 @@ document.getElementById("submitBtn").addEventListener("click", function () {
   // If all validations pass
   alert("Message sent successfully!");
   document.getElementById("contactForm").reset(); // Clear the form
+});
+
+const bookButton = document.querySelector("#book-button");
+
+document.addEventListener("DOMContentLoaded", () => {
+  bookButton.addEventListener("click", () => {
+    const totalVATPriceElement = document.getElementById("total-vat-price");
+    const totalVAT = parseFloat(totalVATPriceElement.textContent.replace('$', ''));
+
+    if (isNaN(totalVAT) || totalVAT <= 0) {
+      alert("Your cart is empty or invalid total price.");
+      return;
+    }
+
+    const confirmation = confirm(`Are you sure you want to spend $${totalVAT.toFixed(2)} on your rental?`);
+
+    if (confirmation) {
+      alert("Thank you for your purchase! Proceeding to checkout...");
+    } else {
+      alert("Purchase canceled. Feel free to make changes to your selection.");
+    }
+
+  });
+
 });
